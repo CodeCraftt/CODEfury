@@ -1,0 +1,30 @@
+<%- include("partials/header") %>
+
+   <div class="restbody">
+  <div class="container">
+    <h1 class="heading">Problemset</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Difficulty Level</th>
+          <th>Problem Name</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Example record -->
+       <% problem.forEach((item)=>{  %>
+        <tr>
+            <td><%=item.desc %> </td>
+            <td><%=item.title %></td>
+             
+            <td> <a href= "/problems/<%=item._id %>"  ><button class="go-button" >Go</button></a></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<%- include("partials/footer") %>

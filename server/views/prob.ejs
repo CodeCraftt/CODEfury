@@ -1,0 +1,61 @@
+<%- include("partials/header") %>
+
+<div class="problem-page">
+    <!-- Problem Name -->
+    <div class="problem-name">
+        <h3>Problem</h3>
+      <h1><%= prob.title %></h1>
+      <p>Difficulty:-<%= prob.desc %></p>
+      <p>TimeLimit:-<%= prob.timelimit%></p>
+    </div>
+
+    <!-- Problem Description -->
+    <div class="problem-description">
+        <h2>Detail:-</h2>
+      <p>
+        <%= prob.statement %>
+      </p>
+      <h2>Input</h2>
+      <p>
+        <%= prob.input %>
+      </p>
+
+      <h2>Output</h2>
+      <p>
+        <%= prob.output %>
+      </p>
+    </div>
+
+    <!-- Test Case Input -->
+    <div class="test-case-input">
+      <h2>Test Case Input</h2>
+      <pre>
+        <%=prob.testcase[0].input %>
+      </pre>
+    </div>
+
+    <!-- Test Case Output -->
+    <div class="test-case-output">
+      <h2>Test Case Output</h2>
+      <pre>
+        <%=prob.testcase[0].output %>
+      </pre>
+    </div>
+
+    <div class="problem-description">
+        <h2>Explanation:-</h2>
+      <p>
+        <%= prob.testcase[0].explanation %>
+      </p>
+    </div>
+
+    <!-- Attempt Button -->
+    <a href="/problems/<%=prob._id%>/attempt">
+    <div class="attempt-button">
+      <button>Attempt</button>
+    </div></a>
+
+  </div>
+  <br><br><br><br><br>
+
+  <%- include("partials/footer") %>

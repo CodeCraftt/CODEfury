@@ -1,0 +1,62 @@
+<%- include("partials/header") %>
+
+<div class="problem-page">
+    <!-- Problem Name -->
+    <div class="problem-name">
+        <h1>Compiler</h1>
+      <h1><%= prob.title %></h1>
+    </div>
+
+
+    <!-- Test Case Input -->
+    <div class="test-case-input">
+      <form action="/problems/<%= prob._id%>/attempt" method="post" style="text-align: center;">
+        <label for="lang">Language :-</label>
+        <select name="lang" >
+          <option value="cpp" >C++</option>
+        </select>
+        <br><br>
+        <h2>Code</h2>
+        <textarea name="code" cols="80" rows="20" ></textarea>
+        <br>
+        <h2>Input For Code</h2>
+        <textarea name="codeinput"  cols="80" rows="5"></textarea>
+        <br>
+        <div class="attempt-button">
+      <button type="submit">Run</button> &nbsp; &nbsp;
+      <button type="submit" formaction="/problems/<%= prob._id%>/attempt/result"> submit Code</button>
+    </div>
+      </form>
+    </div>
+
+    <!-- <form action="/problems/<%= prob._id%>/attempt/result">
+      <div class="attempt-button">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+    <a href="/problems/<%= prob._id%>/attempt/result"><div class="attempt-button">
+      <button >Submit</button>
+    </div></a> -->
+    
+
+    <div class="test-case-input">
+      <h2>Output</h2>
+      <% if (op === null) { %>
+      <p> No output available yet.</p>
+    <% } else { %>
+      <!-- <p><%= op %></p> -->
+      <% op.forEach((item)=>{ %>
+        <p><%= item %></p>
+      <% }) %>
+    <% } %>
+    </div>
+
+  
+
+    <!-- Attempt Button -->
+    
+  </div>
+
+
+  <%- include("partials/footer") %>

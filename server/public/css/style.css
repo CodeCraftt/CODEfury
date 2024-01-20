@@ -1,0 +1,154 @@
+.navbar {
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    padding: '10px 20px'
+  }
+
+  .leftSection {
+    display: flex;
+    align-items:center
+  }
+
+
+  .logo{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px
+  }
+
+  .companyName {
+    font-size: 20px;
+    color:white;
+    font-weight:bold;
+  }
+
+
+  .restbody {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+
+  footer {
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 22px;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  td {
+    font-size: 18px;
+  }
+
+  .go-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .go-button:hover {
+    background-color: #0056b3;
+  }
+
+  
+.problem-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.problem-name h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.problem-description p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.test-case-input, .test-case-output {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #1e1c1c;
+  background-color: #f8f8f8;
+}
+
+.test-case-input h2, .test-case-output h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.test-case-input pre, .test-case-output pre {
+  font-size: 14px;
+  color: #555;
+}
+
+.attempt-button {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.attempt-button button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.attempt-button button:hover {
+  background-color: #0056b3;
+}

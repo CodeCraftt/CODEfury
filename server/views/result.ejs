@@ -1,0 +1,49 @@
+<%- include("partials/header") %>
+
+<div class="problem-page">
+    <!-- Problem Name -->
+    <div class="problem-name">
+      <h1><%= prob.title %></h1>
+    </div>
+
+    <br><br>
+    <h2>VERDICT</h2>
+    <!-- Test Case Input -->
+    <div class="test-case-input">
+        
+          <!-- Assuming "result" is the variable that contains the result message -->
+<% if (result=="1" ) { %>
+  <h2>
+  <div style="color: green;">
+    <i class="fas fa-check-circle"></i> <!-- Font Awesome check circle icon -->
+   Congratulations! Code is Submitted 🎉🎉<!--  -->
+  </div>
+</h2>
+
+<div class="attempt-button">
+ <button><a href="/auth/google" style="text-decoration: none; color: white;">Problems</a></button>
+</div>
+<% } else { %>
+  <h2>
+  <div style="color: rgb(254, 48, 48);">
+    <i class="fas fa-times-circle"></i> <!-- Font Awesome times circle icon -->
+    Wrong Answer! Don't lose hope try again with 2x energy.. ⚡⚡
+  </div>
+</h2>
+<div class="attempt-button">
+  <button ><a href="/problems/<%= prob.id %>/attempt" style="text-decoration: none; color: white;">Try again</a></button>
+</div>
+<% } %>
+
+        
+    </div>
+
+    
+  
+
+    <!-- Attempt Button -->
+    
+  </div>
+
+
+  <%- include("partials/footer") %>
